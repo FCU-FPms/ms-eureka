@@ -8,7 +8,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://140.134.26.71:50608/eureka/
+      defaultZone: http://localhost:8888/eureka/
   server:
     # 关闭自我保护
     enable-self-preservation: false
