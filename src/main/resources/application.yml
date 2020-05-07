@@ -2,9 +2,16 @@ server:
   port: 8888
   
 eureka:
+  instance:
+    prefer-ip-address: true #以IP地址注册到服务中心，相互注册使用IP地址
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://140.134.26.71:50608/eureka/
+  server:
+    # 关闭自我保护
+    enable-self-preservation: false
+    # 清理服务器
+    eviction-interval-timer-in-ms: 5000
 
