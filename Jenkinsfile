@@ -28,7 +28,7 @@ pipeline {
         }
         stage('use image run container') {
             steps {
-                sh 'docker run --name franky-ms-eureka -d -P franky-ms-eureka'
+                sh 'docker run --name franky-ms-eureka -d -p 50608:8888 franky-ms-eureka'
             }
         }
     }
