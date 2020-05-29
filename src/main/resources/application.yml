@@ -7,4 +7,9 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://140.134.26.71:50608/eureka/
+  server:
+    # 關閉自我保護
+    enable-self-preservation: false
+    # 清理服務器
+    eviction-interval-timer-in-ms: 5000
 
